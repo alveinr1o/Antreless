@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Open Sans';
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    background-color: #D1D5DB;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    width: 360px;
+    height: 100vh;
+    position: relative; /* Pastikan elemen anak bisa diposisikan relatif */
+    overflow: hidden; /* Mencegah konten yang keluar dari elemen */
+}
+
+.header {
+    margin: 30px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    width: 150px;
+    margin-left: 10px;
+}
+
+.language select {
+    height: 25px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.btn-language {
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: black;
+    font-weight: 500;
+}
+
+.location {
+    display: flex;
+    border-radius: 10px;
+    margin: 20px 30px;
+    height: 40px;
+    box-shadow: 2px 2px 10px #888888;
+}
+
+.location input {
+    flex: 90%;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+
+.location i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 10%;
+}
+
+.container {
+    margin: 10px 30px;
+}
+
+.container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.slider {
+    display: flex;
+    overflow-x: auto;
+    height: auto;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider .slider-content {
+    margin-right: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slider .slider-content img {
+    margin-right: 0;
+}
+
+.slider .slider-content span {
+    color: black;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.slider-content img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.slider-content span {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.slider-content {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888888;
+    width: 150px;
+    height: 200px;
+    margin: 10px 10px 10px 0;
+}
+
+.slider-content-promo {
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #888888;
+    margin: 10px 10px 10px 0;
+}
+
+.btn-pickup {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 450;
+    background-color: #F9D349;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 8px #888888;
+}
+
+.contact-container {
+    position: absolute; 
+    bottom: 20px; 
+    right: 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-button {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.contact-button i {
+    font-size: 24px;
+    color: gray;
+}
+
+.contact-container p {
+    margin: 0;
+    font-size: 10px;
+    color: black;
+}
+
+.info-order {
+    margin: 5px;
+}
+
+.info-order span {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.popup-container {
+    display: none; 
+    position: fixed; 
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    bottom: 0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 360px; 
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.popup-content h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.popup-content ol {
+    margin: 20px ;
+}
+
+.popup-content ol li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.popup-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
