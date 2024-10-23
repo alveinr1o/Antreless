@@ -46,6 +46,7 @@ main {
     border-radius: 5px;
     color: black;
     font-weight: 500;
+    background-color: #fff;
 }
 
 .location {
