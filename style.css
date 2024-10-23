@@ -20,8 +20,8 @@ main {
     background-color: #FFFFFF;
     width: 360px;
     height: 100vh;
-    position: relative; /* Pastikan elemen anak bisa diposisikan relatif */
-    overflow: hidden; /* Mencegah konten yang keluar dari elemen */
+    position: relative; 
+    overflow: hidden; 
 }
 
 .header {
@@ -198,7 +198,7 @@ main {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5); 
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .popup-content {
@@ -236,4 +236,21 @@ main {
     width: 100%;
     height: auto;
     border-radius: 10px;
+}
+
+/* Responsive */
+@media screen and (max-width: 376px) {
+    main {
+        width: 375px;
+    }
+
+    .popup-content {
+        width: 375px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    main {
+        width: 425px;
+    }
 }
