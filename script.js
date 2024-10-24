@@ -9,6 +9,7 @@ const translations = {
     step1: "Pilih produk untuk untuk dimasukan ke keranjang",
     step2: "Verifikasi",
     step3: "Pilih pembayaran & pesanan akan diproses",
+    kantin: "Lihat kantin",
   },
   en: {
     title1: "Nearest Canteen",
@@ -20,6 +21,7 @@ const translations = {
     step1: "Select products to put in the cart",
     step2: "Verification",
     step3: "Select payment & order will be processed",
+    kantin: "View canteen",
   },
 };
 
@@ -33,6 +35,7 @@ let htorder = document.getElementById("howtoorder");
 let step1 = document.getElementById("step1");
 let step2 = document.getElementById("step2");
 let step3 = document.getElementById("step3");
+let kantin = document.getElementById("kantin-maps");
 
 const setLanguage = (language) => {
   if (language == "id") {
@@ -45,6 +48,7 @@ const setLanguage = (language) => {
     step1.innerText = translations.id.step1;
     step2.innerText = translations.id.step2;
     step3.innerText = translations.id.step3;
+    kantin.innerText = translations.id.kantin;
   } else if (language == "en") {
     t1.innerText = translations.en.title1;
     t2.innerText = translations.en.title2;
@@ -55,6 +59,7 @@ const setLanguage = (language) => {
     step1.innerText = translations.en.step1;
     step2.innerText = translations.en.step2;
     step3.innerText = translations.en.step3;
+    kantin.innerText = translations.en.kantin;
   }
 };
 
