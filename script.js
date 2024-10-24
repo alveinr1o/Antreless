@@ -96,4 +96,3 @@ window.addEventListener("click", function (event) {
     document.getElementById("popup").style.display = "none"; // Hide popup
   }
 });
-
