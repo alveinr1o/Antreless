@@ -96,3 +96,20 @@ window.addEventListener("click", function (event) {
     document.getElementById("popup").style.display = "none"; // Hide popup
   }
 });
+
+// Maps
+document.getElementById("kantin-maps").addEventListener("click", function () {
+  document.getElementById("popup-maps").style.display = "flex"; // Show popup
+});
+
+document.querySelector(".close-btn-maps").addEventListener("click", function () {
+  document.getElementById("popup-maps").style.display = "none"; // Hide popup
+});
+
+// Optional: Close popup when clicking outside of the popup content
+window.addEventListener("click", function (event) {
+  if (event.target === document.getElementById("popup-maps")) {
+    document.getElementById("popup-maps").style.display = "none"; // Hide popup
+  }
+});
+
